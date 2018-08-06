@@ -16,7 +16,7 @@
   <meta name="description" content="Downloads for server software to run Minecraft servers.">
   <meta name="author" content="EmeraldTnt">
   <link rel="stylesheet" href="assets/bulma.min.css" />
-  <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.0.6/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <style>
     .panel-block {
       display: block;
@@ -201,53 +201,5 @@
           </nav>
         </div>
       </div>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52657458-3"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-52657458-3');
-      </script>
-      <script src="assets/jquery.min.js"></script>
-      <script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-      <script>
-        function toggleModalClasses(event) {
-          var modalId = event.currentTarget.dataset.modalId;
-          var modal = $(modalId);
-          modal.toggleClass('is-active');
-          $('html').toggleClass('is-clipped');
-        };
-
-        $('.open-modal').click(toggleModalClasses);
-        $('.close-modal').click(toggleModalClasses);
-
-        $("input:checkbox").click(function () {
-          var showAll = true;
-          $('tr').not('.first').hide();
-          $('input[type=checkbox]').each(function () {
-            if ($(this)[0].checked) {
-              showAll = false;
-              var status = $(this).attr('rel');
-              var value = $(this).val();
-              $('td.' + status + '[rel="' + value + '"]').parent('tr').show();
-            }
-          });
-          if (showAll) {
-            $('tr').show();
-          }
-        });
-        $(document).ready(function () {
-          $("#search").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("tbody tr").filter(function () {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-          });
-        });
-      </script>
     </body>
-
-    / 14:06:14 GMT -->
-
 </html>
